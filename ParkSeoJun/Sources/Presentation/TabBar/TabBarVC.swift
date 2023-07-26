@@ -29,9 +29,9 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
         tabBar.layer.shadowRadius = 6
         
-        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(systemName: "house.fill")?.withRenderingMode(.alwaysOriginal))
-        writeVC.tabBarItem = UITabBarItem(title: "이벤트", image: UIImage(systemName: "square.and.pencil")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(systemName: "square.and.pencil")?.withRenderingMode(.alwaysOriginal))
-        mypageVC.tabBarItem = UITabBarItem(title: "마이", image: UIImage(systemName: "person.circle")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(systemName: "person.circle.fill")?.withRenderingMode(.alwaysOriginal))
+        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house")?.withRenderingMode(.alwaysTemplate), selectedImage: UIImage(systemName: "house.fill")?.withRenderingMode(.alwaysTemplate))
+        writeVC.tabBarItem = UITabBarItem(title: "글쓰기", image: UIImage(systemName: "square.and.pencil")?.withRenderingMode(.alwaysTemplate), selectedImage: UIImage(systemName: "square.and.pencil")?.withRenderingMode(.alwaysTemplate))
+        mypageVC.tabBarItem = UITabBarItem(title: "프로필", image: UIImage(systemName: "person.circle")?.withRenderingMode(.alwaysTemplate), selectedImage: UIImage(systemName: "person.circle.fill")?.withRenderingMode(.alwaysTemplate))
         
         let navigationHome = UINavigationController(rootViewController: homeVC)
         let navigationWrite = UINavigationController(rootViewController: writeVC)
