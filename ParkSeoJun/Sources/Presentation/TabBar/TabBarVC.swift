@@ -10,7 +10,7 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         
         let homeVC = HomeVC()
         let writeVC = WriteVC()
-        let mypageVC = VC()
+        let mypageVC = MyProfileVC()
         
         tabBar.tintColor = UIColor(rgb: 0x5074F3)
         tabBar.backgroundColor = .white
