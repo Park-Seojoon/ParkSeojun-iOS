@@ -68,15 +68,17 @@ final class MyProfileVC: BaseVC {
         $0.tintColor = .black
         $0.titleLabel?.font = .boldSystemFont(ofSize: 11)
         $0.backgroundColor = .white
+        $0.addTarget(self, action: #selector(writeHistoryButtonTapped), for: .touchUpInside)
     }
     
     private let appliedStatusButton = UIButton().then{
-        $0.setTitle(" 신청현황", for: .normal)
+        $0.setTitle("   신청현황", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x000000), for: .normal)
         $0.setImage(UIImage(systemName: "doc.on.doc"), for: .normal)
         $0.tintColor = .black
         $0.titleLabel?.font = .boldSystemFont(ofSize: 11)
         $0.backgroundColor = .white
+        $0.addTarget(self, action: #selector(appliedStatusButtonTapped), for: .touchUpInside)
     }
     
     
@@ -156,9 +158,18 @@ final class MyProfileVC: BaseVC {
             $0.top.equalTo(writeHistoryButton.snp.bottom).offset(16)
             $0.leading.equalTo(self.view).offset(28)
         }
-        
-        
     }
+    
+    @objc func writeHistoryButtonTapped(_ sender: UIButton){
+        let vc = HistoryVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func appliedStatusButtonTapped(_ sender: UIButton){
+        let vc = AppliedStatusVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
 

@@ -8,8 +8,8 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         
-        let homeVC = VC()
-        let writeVC = VC()
+        let homeVC = MyProfileVC()
+        let writeVC = MyProfileVC()
         let mypageVC = MyProfileVC()
         
         tabBar.tintColor = UIColor(rgb: 0x5074F3)
