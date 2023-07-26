@@ -91,16 +91,8 @@ final class LoginVC: BaseVC {
     }
 }
 
-extension LoginVC: UITextFieldDelegate{
+extension LoginVC {
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if idTextField.text!.count > 0 && passwordTextField.text!.count > 0{
 //            loginButton.backgroundColor = UIColor(rgb: 0x42CC89)
