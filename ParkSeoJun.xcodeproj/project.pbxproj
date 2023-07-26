@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733E62A70E0AF004C2238 /* TabBarVC.swift */; };
+
+		
+
+
 		7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC12A70BE4D00E3EEC0 /* Then */; };
 		7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC42A70BE8900E3EEC0 /* SnapKit */; };
 		7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */; };
@@ -33,6 +37,14 @@
 
 /* Begin PBXFileReference section */
 		07C733E62A70E0AF004C2238 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		07C733E82A70E271004C2238 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		07C733EB2A70E756004C2238 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
+		07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
+		07C733F72A713D39004C2238 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		07C733FA2A713D66004C2238 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = "../../../../../../../../.Trash/ParkSeojun-iOS/ParkSeoJun/Sources/Presentation/Home/Cell/PostTableViewCell.swift"; sourceTree = "<group>"; };
+>>>>>>> c5b25caff0863b0c7dbdab8c9d3f00e65a33d80c
 		7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
 		7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		785AC3352A70D4E100FB35AE /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -77,6 +89,39 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		07C733EA2A70E743004C2238 /* Wirte */ = {
+			isa = PBXGroup;
+			children = (
+				07C733EB2A70E756004C2238 /* WriteVC.swift */,
+			);
+			path = Wirte;
+			sourceTree = "<group>";
+		};
+		07C733ED2A70EFD4004C2238 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		07C733F62A713D29004C2238 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07C733F92A713D4D004C2238 /* Cell */,
+				07C733F72A713D39004C2238 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07C733F92A713D4D004C2238 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				07C733FA2A713D66004C2238 /* PostTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7844DBC92A70BF3900E3EEC0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +153,8 @@
 		7844DBCC2A70BF6200E3EEC0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				07C733F62A713D29004C2238 /* Home */,
+				07C733EA2A70E743004C2238 /* Wirte */,
 				07C733E32A70E022004C2238 /* TabBar */,
 				785AC3332A70D4C800FB35AE /* Login */,
 				785AC3342A70D4D300FB35AE /* Signin */,
@@ -129,6 +176,7 @@
 		7844DBCE2A70BFA200E3EEC0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				07C733ED2A70EFD4004C2238 /* UITextField */,
 				7844DBD22A70BFE800E3EEC0 /* Base */,
 				7844DBCF2A70BFAD00E3EEC0 /* UIColor */,
 			);
@@ -365,10 +413,18 @@
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
 				786C99CD2A70BD8D00E91091 /* SceneDelegate.swift in Sources */,
 				785AC3432A70D74600FB35AE /* SmallTitleLabel.swift in Sources */,
+<<<<<<< HEAD
 				78D6B95F2A710917008E1E63 /* HistoryVC.swift in Sources */,
 				7879DA042A71D9BA006D3093 /* AppliedStatusVC.swift in Sources */,
 				78708DED2A7166C700034165 /* HistoryCell.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
+=======
+				07C733F82A713D39004C2238 /* HomeVC.swift in Sources */,
+				07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */,
+				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
+				07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */,
+				07C733E92A70E271004C2238 /* VC.swift in Sources */,
+>>>>>>> c5b25caff0863b0c7dbdab8c9d3f00e65a33d80c
 				78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */,
 				785AC3362A70D4E100FB35AE /* SigninVC.swift in Sources */,
 				07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */,
@@ -377,6 +433,7 @@
 				78D6B95D2A70E92F008E1E63 /* MyProfileVC.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
+				07C733FB2A713D66004C2238 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
