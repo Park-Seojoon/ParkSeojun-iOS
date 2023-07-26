@@ -1,10 +1,3 @@
-//
-//  TabBarVC.swift
-//  ParkSeoJun
-//
-//  Created by 신아인 on 2023/07/26.
-//
-
 import UIKit
 
 class TabBarVC: UITabBarController, UITabBarControllerDelegate {
@@ -16,7 +9,7 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         
         let homeVC = VC()
-        let writeVC = VC()
+        let writeVC = WriteVC()
         let mypageVC = VC()
         
         tabBar.tintColor = UIColor(rgb: 0x5074F3)
