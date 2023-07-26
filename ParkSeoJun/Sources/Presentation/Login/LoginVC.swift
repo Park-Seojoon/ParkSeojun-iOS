@@ -18,7 +18,6 @@ final class LoginVC: BaseVC {
     
     private lazy var loginButton = NextStepButton().then{
         $0.setTitle("로그인", for: .normal)
-        $0.isEnabled = false
     }
     
     private let firstTimeIdeaArchiveLabel = SmallTitleLabel().then{
