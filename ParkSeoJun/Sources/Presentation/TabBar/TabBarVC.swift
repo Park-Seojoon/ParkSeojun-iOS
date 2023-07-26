@@ -8,7 +8,7 @@ class TabBarVC: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         
-        let homeVC = VC()
+        let homeVC = HomeVC()
         let writeVC = WriteVC()
         let mypageVC = VC()
         

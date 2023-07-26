@@ -11,6 +11,8 @@
 		07C733E92A70E271004C2238 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733E82A70E271004C2238 /* VC.swift */; };
 		07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733EB2A70E756004C2238 /* WriteVC.swift */; };
 		07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */; };
+		07C733F82A713D39004C2238 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733F72A713D39004C2238 /* HomeVC.swift */; };
+		07C733FB2A713D66004C2238 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733FA2A713D66004C2238 /* PostTableViewCell.swift */; };
 		7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC12A70BE4D00E3EEC0 /* Then */; };
 		7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC42A70BE8900E3EEC0 /* SnapKit */; };
 		7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */; };
@@ -35,6 +37,8 @@
 		07C733E82A70E271004C2238 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
 		07C733EB2A70E756004C2238 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
 		07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
+		07C733F72A713D39004C2238 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		07C733FA2A713D66004C2238 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = "../../../../../../../../.Trash/ParkSeojun-iOS/ParkSeoJun/Sources/Presentation/Home/Cell/PostTableViewCell.swift"; sourceTree = "<group>"; };
 		7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
 		7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		785AC3352A70D4E100FB35AE /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -91,6 +95,23 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		07C733F62A713D29004C2238 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07C733F92A713D4D004C2238 /* Cell */,
+				07C733F72A713D39004C2238 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		07C733F92A713D4D004C2238 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				07C733FA2A713D66004C2238 /* PostTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7844DBC92A70BF3900E3EEC0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +143,7 @@
 		7844DBCC2A70BF6200E3EEC0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				07C733F62A713D29004C2238 /* Home */,
 				07C733EA2A70E743004C2238 /* Wirte */,
 				07C733E32A70E022004C2238 /* TabBar */,
 				785AC3332A70D4C800FB35AE /* Login */,
@@ -346,6 +368,7 @@
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
 				786C99CD2A70BD8D00E91091 /* SceneDelegate.swift in Sources */,
 				785AC3432A70D74600FB35AE /* SmallTitleLabel.swift in Sources */,
+				07C733F82A713D39004C2238 /* HomeVC.swift in Sources */,
 				07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
 				07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */,
@@ -357,6 +380,7 @@
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
+				07C733FB2A713D66004C2238 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
