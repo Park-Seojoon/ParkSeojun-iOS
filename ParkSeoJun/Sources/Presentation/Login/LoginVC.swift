@@ -2,7 +2,9 @@ import UIKit
 import Then
 import SnapKit
 
-final class LoginVC: BaseVC {
+final class LoginVC: BaseVC, LoginViewModelDelegate {
+    
+    private let viewModel = LoginViewModel()
     
     private let loginLabel = TitleLabel().then{
         $0.text = "LOGIN"
@@ -18,6 +20,8 @@ final class LoginVC: BaseVC {
     
     private lazy var loginButton = NextStepButton().then{
         $0.setTitle("로그인", for: .normal)
+        //$0.isEnabled = false
+        $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
     private let firstTimeIdeaArchiveLabel = SmallTitleLabel().then{
@@ -30,7 +34,6 @@ final class LoginVC: BaseVC {
         $0.setTitleColor(UIColor(rgb: 0x191919), for: .normal)
         $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +85,18 @@ final class LoginVC: BaseVC {
             $0.leading.equalTo(firstTimeIdeaArchiveLabel.snp.trailing).offset(4)
         }
 
+    }
+    
+    func login() {
+        let email = idTextField.text
+        let password = passwordTextField.text
+        viewModel.loginCompleted(email: email ?? "", password: password ?? "")
+    }
+    
+    @objc func loginButtonTapped(_ sender: UIButton){
+        login()
+        let vc = TabBarVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     @objc func signupButtonTapped(_ sender: UIButton){
