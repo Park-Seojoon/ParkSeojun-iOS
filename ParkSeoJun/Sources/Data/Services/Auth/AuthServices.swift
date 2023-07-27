@@ -6,6 +6,7 @@ enum AuthServices {
     case signup(param: SignupRequest)
     case myList(param: )
 }
+
 extension AuthServices: TargetType {
     
     public var baseURL: URL {
