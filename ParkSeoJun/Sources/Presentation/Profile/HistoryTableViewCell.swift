@@ -68,7 +68,6 @@ class HistoryTableViewCell: UITableViewCell {
             $0.width.equalTo(60)
             $0.top.equalToSuperview().offset(28)
             $0.trailing.equalToSuperview().inset(28)
-            
         }
     }
 }

@@ -1,6 +1,8 @@
 import UIKit
 import SnapKit
 import Then
+import Kingfisher
+
 
 final class MyProfileVC: BaseVC {
     
@@ -86,17 +88,20 @@ final class MyProfileVC: BaseVC {
         
         do {
             if let (userId, token) = try KeychainManager.get() {
-                print("User ID: \(userId)")
-                print("Token: \(token)")
+                MyListViewModel().getMyList(accessToken: token) { myListResponse in
+                    if let myListData = myListResponse {
+                        print(myListData.boardList[0].id)
+                    } else {
+                        print("Failed to get MyListData")
+                    }
+                }
+                
             } else {
-                print("No data found in Keychain.")
+                
             }
         } catch let error {
             print("Error while retrieving data from Keychain: \(error)")
         }
-        
-
-
         
     }
     
@@ -181,8 +186,4 @@ final class MyProfileVC: BaseVC {
         let vc = AppliedStatusVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }
-
-

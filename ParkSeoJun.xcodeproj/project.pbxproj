@@ -37,6 +37,8 @@
 		7879DA0C2A71E73F006D3093 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */; };
 		7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */; };
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
+		78801BBA2A72E26700657281 /* MyProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BB92A72E26700657281 /* MyProfileRequest.swift */; };
+		78801BBC2A72E2DB00657281 /* MyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BBB2A72E2DB00657281 /* MyProfileModel.swift */; };
 		78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EDD2A7279C400947F45 /* SignupViewModel.swift */; };
 		78815EED2A727C1E00947F45 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEC2A727C1E00947F45 /* Moya */; };
 		78815EF02A727C3100947F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEF2A727C3100947F45 /* SnapKit */; };
@@ -44,6 +46,10 @@
 		78815EF62A727C5C00947F45 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EF52A727C5C00947F45 /* IQKeyboardManagerSwift */; };
 		78815EF92A728B2200947F45 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EF82A728B2200947F45 /* KeyChainManager.swift */; };
 		789DF4832A72B14F003452B6 /* MyListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DF4822A72B14F003452B6 /* MyListRequest.swift */; };
+		789DF4862A72B217003452B6 /* MyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DF4852A72B217003452B6 /* MyListModel.swift */; };
+		789DF4892A72B4B1003452B6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 789DF4882A72B4B1003452B6 /* Kingfisher */; };
+		789DF48C2A72B54B003452B6 /* ProfileServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DF48B2A72B54B003452B6 /* ProfileServices.swift */; };
+		789DF4902A72B9E0003452B6 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DF48F2A72B9E0003452B6 /* MyListViewModel.swift */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +86,14 @@
 		7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedStatusVC.swift; sourceTree = "<group>"; };
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		78801BB92A72E26700657281 /* MyProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileRequest.swift; sourceTree = "<group>"; };
+		78801BBB2A72E2DB00657281 /* MyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileModel.swift; sourceTree = "<group>"; };
 		78815EDD2A7279C400947F45 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		78815EF82A728B2200947F45 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		789DF4822A72B14F003452B6 /* MyListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRequest.swift; sourceTree = "<group>"; };
+		789DF4852A72B217003452B6 /* MyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListModel.swift; sourceTree = "<group>"; };
+		789DF48B2A72B54B003452B6 /* ProfileServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServices.swift; sourceTree = "<group>"; };
+		789DF48F2A72B9E0003452B6 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
 		78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +106,7 @@
 				78815EF62A727C5C00947F45 /* IQKeyboardManagerSwift in Frameworks */,
 				78815EF32A727C4F00947F45 /* Then in Frameworks */,
 				78815EF02A727C3100947F45 /* SnapKit in Frameworks */,
+				789DF4892A72B4B1003452B6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				07C734142A720AE7004C2238 /* Auth */,
+				789DF48A2A72B531003452B6 /* Profile */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -385,6 +398,7 @@
 				7879DA0D2A71E747006D3093 /* MyProfile */,
 				7879DA0A2A71E730006D3093 /* History */,
 				7879DA0E2A71E757006D3093 /* AppliedStatusVC */,
+				7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -392,8 +406,8 @@
 		7879DA0A2A71E730006D3093 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				7879DA082A71E720006D3093 /* HistoryVC.swift */,
-				7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */,
+				789DF48E2A72B9C0003452B6 /* VC */,
+				789DF48D2A72B9BA003452B6 /* Model */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -401,7 +415,7 @@
 		7879DA0D2A71E747006D3093 /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
-				7879DA062A71E706006D3093 /* MyProfileVC.swift */,
+				78801BBD2A72E33400657281 /* VC */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -430,6 +444,14 @@
 				789DF4842A72B181003452B6 /* Profile */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		78801BBD2A72E33400657281 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7879DA062A71E706006D3093 /* MyProfileVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		78815EDA2A72799000947F45 /* VC */ = {
@@ -467,6 +489,7 @@
 		789DF4812A72B142003452B6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				78801BB92A72E26700657281 /* MyProfileRequest.swift */,
 				789DF4822A72B14F003452B6 /* MyListRequest.swift */,
 			);
 			path = Profile;
@@ -475,8 +498,34 @@
 		789DF4842A72B181003452B6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				78801BBB2A72E2DB00657281 /* MyProfileModel.swift */,
+				789DF4852A72B217003452B6 /* MyListModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		789DF48A2A72B531003452B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				789DF48B2A72B54B003452B6 /* ProfileServices.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		789DF48D2A72B9BA003452B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				789DF48F2A72B9E0003452B6 /* MyListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		789DF48E2A72B9C0003452B6 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7879DA082A71E720006D3093 /* HistoryVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +549,7 @@
 				78815EEF2A727C3100947F45 /* SnapKit */,
 				78815EF22A727C4F00947F45 /* Then */,
 				78815EF52A727C5C00947F45 /* IQKeyboardManagerSwift */,
+				789DF4882A72B4B1003452B6 /* Kingfisher */,
 			);
 			productName = ParkSeoJun;
 			productReference = 786C99C72A70BD8D00E91091 /* ParkSeoJun.app */;
@@ -534,6 +584,7 @@
 				78815EEE2A727C3100947F45 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				78815EF12A727C4F00947F45 /* XCRemoteSwiftPackageReference "Then" */,
 				78815EF42A727C5C00947F45 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				789DF4872A72B4B1003452B6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 786C99C82A70BD8D00E91091 /* Products */;
 			projectDirPath = "";
@@ -563,6 +614,7 @@
 			files = (
 				785AC33B2A70D66200FB35AE /* SecureTextField.swift in Sources */,
 				786C99CF2A70BD8D00E91091 /* LoginVC.swift in Sources */,
+				78801BBC2A72E2DB00657281 /* MyProfileModel.swift in Sources */,
 				07C734122A72082C004C2238 /* SignupRequest.swift in Sources */,
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
 				786C99CD2A70BD8D00E91091 /* SceneDelegate.swift in Sources */,
@@ -579,18 +631,22 @@
 				07C734162A720AFB004C2238 /* AuthServices.swift in Sources */,
 				7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */,
 				07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */,
+				789DF4862A72B217003452B6 /* MyListModel.swift in Sources */,
 				07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */,
 				07C734032A720163004C2238 /* BaseURL.swift in Sources */,
 				78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */,
 				785AC3362A70D4E100FB35AE /* SignupVC.swift in Sources */,
+				789DF4902A72B9E0003452B6 /* MyListViewModel.swift in Sources */,
 				07C734102A7207B6004C2238 /* LoginRequest.swift in Sources */,
 				7879DA0C2A71E73F006D3093 /* HistoryTableViewCell.swift in Sources */,
 				07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */,
 				789DF4832A72B14F003452B6 /* MyListRequest.swift in Sources */,
 				785AC33E2A70D68C00FB35AE /* TitleLabel.swift in Sources */,
+				78801BBA2A72E26700657281 /* MyProfileRequest.swift in Sources */,
 				07C734082A72024E004C2238 /* LoginModel.swift in Sources */,
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
 				07C7340A2A72026B004C2238 /* SignupModel.swift in Sources */,
+				789DF48C2A72B54B003452B6 /* ProfileServices.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
 			);
@@ -834,6 +890,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		789DF4872A72B4B1003452B6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -856,6 +920,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78815EF42A727C5C00947F45 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		789DF4882A72B4B1003452B6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 789DF4872A72B4B1003452B6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

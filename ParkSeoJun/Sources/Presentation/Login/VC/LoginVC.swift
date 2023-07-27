@@ -93,7 +93,6 @@ final class LoginVC: BaseVC {
     }
     
     @objc func loginButtonTapped(_ sender: UIButton){
-        
         LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
     
     }

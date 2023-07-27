@@ -4,7 +4,6 @@ import Moya
 enum AuthServices {
     case login(param: LoginRequest)
     case signup(param: SignupRequest)
-    case myList(param: )
 }
 extension AuthServices: TargetType {
     
@@ -18,11 +17,7 @@ extension AuthServices: TargetType {
             return "/auth/login"
         case .signup:
             return "/auth/signup"
-        case .myList:
-            
         }
-    
-        
     }
     
     var method: Moya.Method {

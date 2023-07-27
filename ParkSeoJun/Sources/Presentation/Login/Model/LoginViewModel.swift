@@ -21,6 +21,9 @@ extension LoginViewModel {
                 
                 do {
                     self.authData = try? result.map(LoginResponse.self)
+                    
+                    try KeychainManager.delete()
+                    
                     try KeychainManager.save(
                         userId: param.email,
                         token: self.authData.accessToken.data(using: .utf8) ?? Data())

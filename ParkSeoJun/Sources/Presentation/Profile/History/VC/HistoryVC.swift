@@ -2,15 +2,12 @@ import UIKit
 import Then
 import SnapKit
 
-final class HistoryVC: BaseVC {
+final class HistoryVC: BaseVC{
+    
+    var HistoryVCToken = ""
     
     private let historyTableView = UITableView().then {
         $0.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.identifier)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
     }
     
     override func setup() {
@@ -19,6 +16,27 @@ final class HistoryVC: BaseVC {
         historyTableView.dataSource = self
         historyTableView.delegate = self
         historyTableView.rowHeight = 100
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        historyTableView.reloadData()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        do {
+            if let (userId, token) = try KeychainManager.get() {
+                HistoryVCToken = token
+            } else {
+                
+            }
+        } catch let error {
+            print("Error while retrieving data from Keychain: \(error)")
+        }
+        
+        
     }
     
     override func addView() {
@@ -36,22 +54,29 @@ final class HistoryVC: BaseVC {
 
 extension HistoryVC: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier, for: indexPath) as! HistoryTableViewCell
+        
+        
+        MyListViewModel().getMyList(accessToken: HistoryVCToken) { myListResponse in
+            if let myListData = myListResponse {
+                cell.titleLabel.text = String(myListData.boardList[indexPath.row].id)
+                cell.pointLabel.text = String(myListData.boardList[indexPath.row].point)
+            } else {}
+        }
         
         return cell
         
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 151
-    }
-    
-    
-    
 }
 
+
 extension HistoryVC: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
