@@ -44,6 +44,8 @@
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
 		7879DA192A71F464006D3093 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7879DA182A71F464006D3093 /* Moya */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
+		78D6B95D2A70E92F008E1E63 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B95C2A70E92F008E1E63 /* MyProfileVC.swift */; };
+		78D6B95F2A710917008E1E63 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B95E2A710917008E1E63 /* HistoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedStatusVC.swift; sourceTree = "<group>"; };
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
+		78D6B95C2A70E92F008E1E63 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		78D6B95E2A710917008E1E63 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +545,7 @@
 				07C7340A2A72026B004C2238 /* SignupModel.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
+				07C733FB2A713D66004C2238 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
