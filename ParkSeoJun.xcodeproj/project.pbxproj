@@ -19,6 +19,10 @@
 		07C734122A72082C004C2238 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734112A72082C004C2238 /* SignupRequest.swift */; };
 		07C734162A720AFB004C2238 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734152A720AFB004C2238 /* AuthServices.swift */; };
 		07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734182A720F86004C2238 /* LoginViewModel.swift */; };
+		07D3639F2A7256DE002412F3 /* UserArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3639E2A7256DE002412F3 /* UserArticleRequest.swift */; };
+		07D363A12A725F19002412F3 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A02A725F19002412F3 /* UserServices.swift */; };
+		07D363A42A728991002412F3 /* UserArticleListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A32A728990002412F3 /* UserArticleListRequest.swift */; };
+		07D363A72A728A53002412F3 /* UserArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A62A728A53002412F3 /* UserArticleListModel.swift */; };
 		7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */; };
 		7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */; };
 		785AC3362A70D4E100FB35AE /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AC3352A70D4E100FB35AE /* SignupVC.swift */; };
@@ -205,6 +209,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		07D3639C2A725692002412F3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				07D363A02A725F19002412F3 /* UserServices.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		07D3639D2A72569A002412F3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				07D3639E2A7256DE002412F3 /* UserArticleRequest.swift */,
+				07D363A32A728990002412F3 /* UserArticleListRequest.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		07D363A92A72B66E002412F3 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				07D363A62A728A53002412F3 /* UserArticleListModel.swift */,
+				78815EF82A728B2200947F45 /* KeyChainManager.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		7844DBC92A70BF3900E3EEC0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +388,7 @@
 			children = (
 				786C99C92A70BD8D00E91091 /* ParkSeoJun */,
 				786C99C82A70BD8D00E91091 /* Products */,
+				07D363A92A72B66E002412F3 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -428,6 +459,7 @@
 				78815EF72A728B1700947F45 /* KeyChain */,
 				07C734042A7201D4004C2238 /* Auth */,
 				789DF4842A72B181003452B6 /* Profile */,
+				07C734042A7201D4004C2238 /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,14 +486,6 @@
 				785AC3352A70D4E100FB35AE /* SignupVC.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		78815EF72A728B1700947F45 /* KeyChain */ = {
-			isa = PBXGroup;
-			children = (
-				78815EF82A728B2200947F45 /* KeyChainManager.swift */,
-			);
-			path = KeyChain;
 			sourceTree = "<group>";
 		};
 		789DF4812A72B142003452B6 /* Profile */ = {
