@@ -11,6 +11,7 @@
 		07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733EB2A70E756004C2238 /* WriteVC.swift */; };
 		07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */; };
 		07C733F82A713D39004C2238 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733F72A713D39004C2238 /* HomeVC.swift */; };
+		07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733FE2A71EC35004C2238 /* PostVC.swift */; };
 		7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC12A70BE4D00E3EEC0 /* Then */; };
 		7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC42A70BE8900E3EEC0 /* SnapKit */; };
 		7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */; };
@@ -40,6 +41,7 @@
 		07C733EB2A70E756004C2238 /* WriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteVC.swift; sourceTree = "<group>"; };
 		07C733EE2A70EFFE004C2238 /* UITextField + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + Extension.swift"; sourceTree = "<group>"; };
 		07C733F72A713D39004C2238 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		07C733FE2A71EC35004C2238 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
 		7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		785AC3352A70D4E100FB35AE /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				7879DA112A71E7DB006D3093 /* Cell */,
 				07C733F72A713D39004C2238 /* HomeVC.swift */,
+				07C733FE2A71EC35004C2238 /* PostVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */,
 				7879DA092A71E720006D3093 /* HistoryVC.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
+				07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */,
 				7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */,
 				7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */,
 				07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */,
