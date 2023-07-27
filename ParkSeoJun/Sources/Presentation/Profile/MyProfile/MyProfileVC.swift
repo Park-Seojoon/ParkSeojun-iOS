@@ -84,6 +84,20 @@ final class MyProfileVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        do {
+            if let (userId, token) = try KeychainManager.get() {
+                print("User ID: \(userId)")
+                print("Token: \(token)")
+            } else {
+                print("No data found in Keychain.")
+            }
+        } catch let error {
+            print("Error while retrieving data from Keychain: \(error)")
+        }
+        
+
+
+        
     }
     
     override func addView() {

@@ -19,9 +19,6 @@
 		07C734122A72082C004C2238 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734112A72082C004C2238 /* SignupRequest.swift */; };
 		07C734162A720AFB004C2238 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734152A720AFB004C2238 /* AuthServices.swift */; };
 		07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734182A720F86004C2238 /* LoginViewModel.swift */; };
-		7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC12A70BE4D00E3EEC0 /* Then */; };
-		7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC42A70BE8900E3EEC0 /* SnapKit */; };
-		7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */; };
 		7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */; };
 		7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */; };
 		785AC3362A70D4E100FB35AE /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AC3352A70D4E100FB35AE /* SignupVC.swift */; };
@@ -40,7 +37,13 @@
 		7879DA0C2A71E73F006D3093 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */; };
 		7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */; };
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
-		7879DA192A71F464006D3093 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7879DA182A71F464006D3093 /* Moya */; };
+		78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EDD2A7279C400947F45 /* SignupViewModel.swift */; };
+		78815EED2A727C1E00947F45 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEC2A727C1E00947F45 /* Moya */; };
+		78815EF02A727C3100947F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEF2A727C3100947F45 /* SnapKit */; };
+		78815EF32A727C4F00947F45 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EF22A727C4F00947F45 /* Then */; };
+		78815EF62A727C5C00947F45 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EF52A727C5C00947F45 /* IQKeyboardManagerSwift */; };
+		78815EF92A728B2200947F45 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EF82A728B2200947F45 /* KeyChainManager.swift */; };
+		789DF4832A72B14F003452B6 /* MyListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DF4822A72B14F003452B6 /* MyListRequest.swift */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedStatusVC.swift; sourceTree = "<group>"; };
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		78815EDD2A7279C400947F45 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		78815EF82A728B2200947F45 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		789DF4822A72B14F003452B6 /* MyListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRequest.swift; sourceTree = "<group>"; };
 		78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */,
-				7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */,
-				7879DA192A71F464006D3093 /* Moya in Frameworks */,
-				7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */,
+				78815EED2A727C1E00947F45 /* Moya in Frameworks */,
+				78815EF62A727C5C00947F45 /* IQKeyboardManagerSwift in Frameworks */,
+				78815EF32A727C4F00947F45 /* Then in Frameworks */,
+				78815EF02A727C3100947F45 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				07C7340C2A7206BF004C2238 /* Auth */,
+				789DF4812A72B142003452B6 /* Profile */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -305,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				07C734172A720F77004C2238 /* Model */,
-				786C99CE2A70BD8D00E91091 /* LoginVC.swift */,
+				78815EDA2A72799000947F45 /* VC */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -313,7 +320,8 @@
 		785AC3342A70D4D300FB35AE /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				785AC3352A70D4E100FB35AE /* SignupVC.swift */,
+				78815EDB2A72799C00947F45 /* Model */,
+				78815EDC2A7279B300947F45 /* VC */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -417,9 +425,58 @@
 		7879DA142A71ED26006D3093 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78815EF72A728B1700947F45 /* KeyChain */,
 				07C734042A7201D4004C2238 /* Auth */,
+				789DF4842A72B181003452B6 /* Profile */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		78815EDA2A72799000947F45 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				786C99CE2A70BD8D00E91091 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		78815EDB2A72799C00947F45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78815EDD2A7279C400947F45 /* SignupViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78815EDC2A7279B300947F45 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				785AC3352A70D4E100FB35AE /* SignupVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		78815EF72A728B1700947F45 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				78815EF82A728B2200947F45 /* KeyChainManager.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		789DF4812A72B142003452B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				789DF4822A72B14F003452B6 /* MyListRequest.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		789DF4842A72B181003452B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,10 +496,10 @@
 			);
 			name = ParkSeoJun;
 			packageProductDependencies = (
-				7844DBC12A70BE4D00E3EEC0 /* Then */,
-				7844DBC42A70BE8900E3EEC0 /* SnapKit */,
-				7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */,
-				7879DA182A71F464006D3093 /* Moya */,
+				78815EEC2A727C1E00947F45 /* Moya */,
+				78815EEF2A727C3100947F45 /* SnapKit */,
+				78815EF22A727C4F00947F45 /* Then */,
+				78815EF52A727C5C00947F45 /* IQKeyboardManagerSwift */,
 			);
 			productName = ParkSeoJun;
 			productReference = 786C99C72A70BD8D00E91091 /* ParkSeoJun.app */;
@@ -473,10 +530,10 @@
 			);
 			mainGroup = 786C99BE2A70BD8D00E91091;
 			packageReferences = (
-				7844DBC02A70BE4D00E3EEC0 /* XCRemoteSwiftPackageReference "Then" */,
-				7844DBC32A70BE8900E3EEC0 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				7844DBC62A70BE9200E3EEC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */,
+				78815EEB2A727C1E00947F45 /* XCRemoteSwiftPackageReference "Moya" */,
+				78815EEE2A727C3100947F45 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				78815EF12A727C4F00947F45 /* XCRemoteSwiftPackageReference "Then" */,
+				78815EF42A727C5C00947F45 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 786C99C82A70BD8D00E91091 /* Products */;
 			projectDirPath = "";
@@ -515,8 +572,10 @@
 				07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */,
 				7879DA092A71E720006D3093 /* HistoryVC.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
+				78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */,
 				07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */,
 				7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */,
+				78815EF92A728B2200947F45 /* KeyChainManager.swift in Sources */,
 				07C734162A720AFB004C2238 /* AuthServices.swift in Sources */,
 				7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */,
 				07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */,
@@ -527,6 +586,7 @@
 				07C734102A7207B6004C2238 /* LoginRequest.swift in Sources */,
 				7879DA0C2A71E73F006D3093 /* HistoryTableViewCell.swift in Sources */,
 				07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */,
+				789DF4832A72B14F003452B6 /* MyListRequest.swift in Sources */,
 				785AC33E2A70D68C00FB35AE /* TitleLabel.swift in Sources */,
 				07C734082A72024E004C2238 /* LoginModel.swift in Sources */,
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
@@ -742,31 +802,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7844DBC02A70BE4D00E3EEC0 /* XCRemoteSwiftPackageReference "Then" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Then";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-		7844DBC32A70BE8900E3EEC0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		7844DBC62A70BE9200E3EEC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		78815EEB2A727C1E00947F45 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
 			requirement = {
@@ -774,28 +810,52 @@
 				minimumVersion = 15.0.0;
 			};
 		};
+		78815EEE2A727C3100947F45 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		78815EF12A727C4F00947F45 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		78815EF42A727C5C00947F45 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7844DBC12A70BE4D00E3EEC0 /* Then */ = {
+		78815EEC2A727C1E00947F45 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7844DBC02A70BE4D00E3EEC0 /* XCRemoteSwiftPackageReference "Then" */;
-			productName = Then;
+			package = 78815EEB2A727C1E00947F45 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
-		7844DBC42A70BE8900E3EEC0 /* SnapKit */ = {
+		78815EEF2A727C3100947F45 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7844DBC32A70BE8900E3EEC0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 78815EEE2A727C3100947F45 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */ = {
+		78815EF22A727C4F00947F45 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7844DBC62A70BE9200E3EEC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
+			package = 78815EF12A727C4F00947F45 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
-		7879DA182A71F464006D3093 /* Moya */ = {
+		78815EF52A727C5C00947F45 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
+			package = 78815EF42A727C5C00947F45 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
