@@ -1,13 +1,12 @@
 import Foundation
+import UIKit
 import Moya
 
 class LoginViewModel {
     let authProvider = MoyaProvider<AuthServices>()
     var authData: LoginResponse!
-}
-
-protocol LoginViewModelDelegate: AnyObject {
-    func login()
+    
+    static var accessToken = ""
 }
 
 extension LoginViewModel {
@@ -19,18 +18,22 @@ extension LoginViewModel {
             
             switch response {
             case .success(let result):
+                
                 do {
                     self.authData = try? result.map(LoginResponse.self)
+                    try KeychainManager.save(
+                        userId: param.email,
+                        token: self.authData.accessToken.data(using: .utf8) ?? Data())
                 }catch(let err) {
                     print(String(describing: err))
                 }
                 let statusCode = result.statusCode
                 
-                print(self.authData.accessToken)
-                
                 switch statusCode{
                 case 200..<300:
-                    print("Login success with status code: \(statusCode)")
+                    UIApplication.shared.windows.first?.rootViewController = TabBarVC()
+                    UIApplication.shared.windows.first?.makeKeyAndVisible()
+                    
                 case 400:
                     print("Login failed with status code: \(statusCode)")
                 default:

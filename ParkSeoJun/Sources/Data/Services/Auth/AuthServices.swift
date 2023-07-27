@@ -4,6 +4,7 @@ import Moya
 enum AuthServices {
     case login(param: LoginRequest)
     case signup(param: SignupRequest)
+    case myList(param: )
 }
 extension AuthServices: TargetType {
     
@@ -17,7 +18,11 @@ extension AuthServices: TargetType {
             return "/auth/login"
         case .signup:
             return "/auth/signup"
+        case .myList:
+            
         }
+    
+        
     }
     
     var method: Moya.Method {
@@ -39,7 +44,13 @@ extension AuthServices: TargetType {
                 "password" : param.password ]
             return .requestJSONEncodable(params)
         case .signup(let param):
-            return .requestJSONEncodable(param)
+            let params : [String: String] = [
+                "email" : param.email,
+                "name": param.name,
+                "password" : param.password,
+                "rePassword": param.rePassword
+            ]
+            return .requestJSONEncodable(params)
         }
     }
     

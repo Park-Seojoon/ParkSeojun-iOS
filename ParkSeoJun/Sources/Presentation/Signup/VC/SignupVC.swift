@@ -26,8 +26,6 @@ final class SignupVC: BaseVC {
     
     private lazy var confirmationButton = NextStepButton().then{
         $0.setTitle("확인", for: .normal)
-        $0.isEnabled = false
-        $0.backgroundColor = UIColor(rgb: 0x999999)
         $0.addTarget(self, action: #selector(confirmationButtonTapped), for: .touchUpInside)
     }
     
@@ -103,59 +101,20 @@ final class SignupVC: BaseVC {
     }
     
     @objc func confirmationButtonTapped(_ sender: UIButton){
-//        let vc = CertificationNumberViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        SignupViewModel().signupCompleted(
+            email: emailTextField.text ?? "",
+            name: nameTextField.text ?? "",
+            password: passwordTextField.text ?? "",
+            rePassword: passwordAgainTextField.text ?? "")
+        
+        SignupViewModel().onSignupSuccess = {
+            print("성공했다 ㅎㅎ")
+        }
+        
+        
     }
     
     @objc func loginButtonTapped(_ sender: UIButton){
         self.navigationController?.popToRootViewController(animated: true)
     }
 }
-
-extension SignupVC {
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-        guard let email = emailTextField.text,
-              let range = email.range(of: emailRegEx, options: [.regularExpression]),
-              email.count > 0,
-              range.upperBound == email.endIndex && range.lowerBound == email.startIndex else {
-            return
-        }
-        
-        var myCharSet = CharacterSet(charactersIn: "!@#$%^&*()_+~`=-")
-        myCharSet.formUnion(CharacterSet.punctuationCharacters)
-        
-        guard let password = passwordTextField.text,
-              (8...16).contains(password.count),
-              password.rangeOfCharacter(from: myCharSet) != nil else {
-            
-            return
-        }
-        
-        if nameTextField.text!.count > 0 &&
-            emailTextField.text!.count > 0 &&
-            passwordAgainTextField.text!.count >= 8 &&
-            passwordAgainTextField.text!.count <= 16 &&
-            passwordTextField.text! == passwordAgainTextField.text!{
-            confirmationButton.backgroundColor = UIColor(rgb: 0x42CC89)
-            confirmationButton.isEnabled = true
-        }
-        else{
-            confirmationButton.backgroundColor = UIColor(rgb: 0x999999)
-            confirmationButton.isEnabled = false
-        }
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if let char = string.cString(using: String.Encoding.utf8) {
-            let isBackSpace = strcmp(char, "\\b")
-            if isBackSpace == -92 {
-                return true
-            }
-        }
-        return true
-    }
-}
-

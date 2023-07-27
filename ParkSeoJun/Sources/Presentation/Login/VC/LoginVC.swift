@@ -19,7 +19,6 @@ final class LoginVC: BaseVC {
     
     private lazy var loginButton = NextStepButton().then{
         $0.setTitle("로그인", for: .normal)
-        
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
@@ -44,8 +43,6 @@ final class LoginVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        LoginViewModel().loginCompleted(email: "s22023@gsm.hs.kr", password: "qkrwnstj7!")
         
     }
     
@@ -96,8 +93,9 @@ final class LoginVC: BaseVC {
     }
     
     @objc func loginButtonTapped(_ sender: UIButton){
-        UIApplication.shared.windows.first?.rootViewController = TabBarVC()
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
+        
+        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+    
     }
     
 }
