@@ -1,23 +1,23 @@
 import UIKit
 import Moya
 
-class MyListViewModel {
-    let myListProfileProvider = MoyaProvider<ProfileServices>()
-    var myListData: MyListResponse!
+class MyProfileViewModel {
+    let myProfileProvider = MoyaProvider<ProfileServices>()
+    var myProfileData: MyProfileResponse!
 }
 
-extension MyListViewModel {
+extension MyProfileViewModel {
     
-    func getMyList(accessToken: String, completion: @escaping (MyListResponse?) -> Void) {
+    func myProfile(accessToken: String, completion: @escaping (MyProfileResponse?) -> Void) {
+
+        let param = MyProfileRequest.init(header: accessToken)
         
-        let param = MyListRequest.init(header: accessToken)
-        
-        myListProfileProvider.request(.myList(param: param)) { response in
+        myProfileProvider.request(.myProfile(param: param)){ response in
             switch response {
             case .success(let result):
                 
                 do {
-                    self.myListData = try? result.map(MyListResponse.self)
+                    self.myProfileData = try? result.map(MyProfileResponse.self)
                 }catch(let err) {
                     print(String(describing: err))
                 }
@@ -26,8 +26,8 @@ extension MyListViewModel {
                 
                 switch statusCode {
                 case 200..<300:
-                    if let myListResponse = try? result.map(MyListResponse.self) {
-                        completion(myListResponse)
+                    if let myProfileResponse = try? result.map(MyProfileResponse.self) {
+                        completion(myProfileResponse)
                     } else {
                         print("Failed to parse MyListResponse")
                         completion(nil)
@@ -43,3 +43,4 @@ extension MyListViewModel {
         }
     }
 }
+

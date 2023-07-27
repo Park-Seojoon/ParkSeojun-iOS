@@ -9,6 +9,12 @@ final class HistoryVC: BaseVC{
     private let historyTableView = UITableView().then {
         $0.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.identifier)
     }
+   
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        historyTableView.reloadData()
+    }
     
     override func setup() {
         self.navigationItem.title = "글 작성 내역"
@@ -16,15 +22,6 @@ final class HistoryVC: BaseVC{
         historyTableView.dataSource = self
         historyTableView.delegate = self
         historyTableView.rowHeight = 100
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        historyTableView.reloadData()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         do {
             if let (userId, token) = try KeychainManager.get() {
@@ -35,8 +32,6 @@ final class HistoryVC: BaseVC{
         } catch let error {
             print("Error while retrieving data from Keychain: \(error)")
         }
-        
-        
     }
     
     override func addView() {

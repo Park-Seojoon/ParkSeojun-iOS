@@ -13,7 +13,6 @@ final class MyProfileVC: BaseVC {
     }
     
     private let nicknameLabel = UILabel().then{
-        $0.text = "신아인신아인신아인"
         $0.textColor = UIColor(rgb: 0x000000)
         $0.textAlignment = .center
         $0.font = .boldSystemFont(ofSize: 16)
@@ -42,7 +41,6 @@ final class MyProfileVC: BaseVC {
     }
     
     private let myPointLabel = UILabel().then{
-        $0.text = "10,000"
         $0.textColor = UIColor(rgb: 0x000000)
         $0.textAlignment = .center
         $0.font = .boldSystemFont(ofSize: 20)
@@ -83,27 +81,23 @@ final class MyProfileVC: BaseVC {
         $0.addTarget(self, action: #selector(appliedStatusButtonTapped), for: .touchUpInside)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    override func setup() {
         do {
             if let (userId, token) = try KeychainManager.get() {
-                MyListViewModel().getMyList(accessToken: token) { myListResponse in
-                    if let myListData = myListResponse {
-                        print(myListData.boardList[0].id)
-                    } else {
-                        print("Failed to get MyListData")
-                    }
-                }
-                
-            } else {
-                
+                print(token)
+                MyProfileViewModel().myProfile(accessToken: token, completion: { myProfileResponse in
+                    
+                    self.nicknameLabel.text = myProfileResponse!.name
+                    self.myPointLabel.text = String(myProfileResponse!.point)
+                    
+                })
             }
         } catch let error {
             print("Error while retrieving data from Keychain: \(error)")
         }
-        
     }
+    
     
     override func addView() {
         view.addSubview(profileImage)

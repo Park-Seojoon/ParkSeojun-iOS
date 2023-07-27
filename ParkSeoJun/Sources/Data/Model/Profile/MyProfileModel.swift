@@ -5,12 +5,7 @@ struct MyProfileModel: Codable {
 }
 
 struct MyProfileResponse: Codable {
-    let boardList: [MyProfile]
-}
-
-struct MyProfile: Codable {
     let name: String
     let point: Int
 }
-
 

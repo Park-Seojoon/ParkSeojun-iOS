@@ -39,6 +39,8 @@
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
 		78801BBA2A72E26700657281 /* MyProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BB92A72E26700657281 /* MyProfileRequest.swift */; };
 		78801BBC2A72E2DB00657281 /* MyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BBB2A72E2DB00657281 /* MyProfileModel.swift */; };
+		78801BC02A72E46900657281 /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BBF2A72E46900657281 /* MyProfileViewModel.swift */; };
+		78801BC22A72ED5B00657281 /* MyAppliedListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BC12A72ED5B00657281 /* MyAppliedListRequest.swift */; };
 		78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EDD2A7279C400947F45 /* SignupViewModel.swift */; };
 		78815EED2A727C1E00947F45 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEC2A727C1E00947F45 /* Moya */; };
 		78815EF02A727C3100947F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEF2A727C3100947F45 /* SnapKit */; };
@@ -88,6 +90,8 @@
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		78801BB92A72E26700657281 /* MyProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileRequest.swift; sourceTree = "<group>"; };
 		78801BBB2A72E2DB00657281 /* MyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileModel.swift; sourceTree = "<group>"; };
+		78801BBF2A72E46900657281 /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
+		78801BC12A72ED5B00657281 /* MyAppliedListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppliedListRequest.swift; sourceTree = "<group>"; };
 		78815EDD2A7279C400947F45 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		78815EF82A728B2200947F45 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		789DF4822A72B14F003452B6 /* MyListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRequest.swift; sourceTree = "<group>"; };
@@ -416,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				78801BBD2A72E33400657281 /* VC */,
+				78801BBE2A72E45A00657281 /* Model */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -452,6 +457,14 @@
 				7879DA062A71E706006D3093 /* MyProfileVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		78801BBE2A72E45A00657281 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78801BBF2A72E46900657281 /* MyProfileViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		78815EDA2A72799000947F45 /* VC */ = {
@@ -491,6 +504,7 @@
 			children = (
 				78801BB92A72E26700657281 /* MyProfileRequest.swift */,
 				789DF4822A72B14F003452B6 /* MyListRequest.swift */,
+				78801BC12A72ED5B00657281 /* MyAppliedListRequest.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -642,6 +656,7 @@
 				07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */,
 				789DF4832A72B14F003452B6 /* MyListRequest.swift in Sources */,
 				785AC33E2A70D68C00FB35AE /* TitleLabel.swift in Sources */,
+				78801BC02A72E46900657281 /* MyProfileViewModel.swift in Sources */,
 				78801BBA2A72E26700657281 /* MyProfileRequest.swift in Sources */,
 				07C734082A72024E004C2238 /* LoginModel.swift in Sources */,
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
@@ -649,6 +664,7 @@
 				789DF48C2A72B54B003452B6 /* ProfileServices.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
+				78801BC22A72ED5B00657281 /* MyAppliedListRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

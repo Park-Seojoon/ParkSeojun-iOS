@@ -4,6 +4,7 @@ import Moya
 enum ProfileServices {
     case myProfile(param: MyProfileRequest )
     case myList(param: MyListRequest)
+    case myAppliedList(param: MyListRequest)
 }
 
 extension ProfileServices: TargetType {
@@ -15,16 +16,21 @@ extension ProfileServices: TargetType {
     var path: String {
         switch self {
         case .myProfile:
-            return "/auth/info"
+            return "/user/info"
         case .myList:
             return "/user/article/myList"
+        case .myAppliedList:
+            return "/user/article/doMyList"
         }
+
       
     }
     
     var method: Moya.Method {
         switch self {
-        case .myProfile,.myList:
+        case .myProfile:
+            return .get
+        case .myList:
             return .get
         }
     }
