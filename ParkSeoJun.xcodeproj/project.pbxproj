@@ -34,6 +34,7 @@
 		7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */; };
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
 		7879DA162A71ED7F006D3093 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA152A71ED7F006D3093 /* Signin.swift */; };
+		7879DA192A71F464006D3093 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7879DA182A71F464006D3093 /* Moya */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 			files = (
 				7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */,
 				7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */,
+				7879DA192A71F464006D3093 /* Moya in Frameworks */,
 				7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +360,7 @@
 				7844DBC12A70BE4D00E3EEC0 /* Then */,
 				7844DBC42A70BE8900E3EEC0 /* SnapKit */,
 				7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */,
+				7879DA182A71F464006D3093 /* Moya */,
 			);
 			productName = ParkSeoJun;
 			productReference = 786C99C72A70BD8D00E91091 /* ParkSeoJun.app */;
@@ -391,6 +394,7 @@
 				7844DBC02A70BE4D00E3EEC0 /* XCRemoteSwiftPackageReference "Then" */,
 				7844DBC32A70BE8900E3EEC0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7844DBC62A70BE9200E3EEC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 786C99C82A70BD8D00E91091 /* Products */;
 			projectDirPath = "";
@@ -674,6 +678,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -691,6 +703,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7844DBC62A70BE9200E3EEC0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		7879DA182A71F464006D3093 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7879DA172A71F464006D3093 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
