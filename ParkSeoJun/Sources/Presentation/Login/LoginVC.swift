@@ -32,7 +32,6 @@ final class LoginVC: BaseVC {
         $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -33,6 +33,7 @@
 		7879DA0C2A71E73F006D3093 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */; };
 		7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */; };
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
+		7879DA162A71ED7F006D3093 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA152A71ED7F006D3093 /* Signin.swift */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		7879DA0B2A71E73F006D3093 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedStatusVC.swift; sourceTree = "<group>"; };
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		7879DA152A71ED7F006D3093 /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 		7844DBCA2A70BF4600E3EEC0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7879DA142A71ED26006D3093 /* Model */,
 				7844DBCB2A70BF5200E3EEC0 /* Application */,
 				7844DBCC2A70BF6200E3EEC0 /* Presentation */,
 				7844DBCD2A70BF8100E3EEC0 /* DesignSystem */,
@@ -327,6 +330,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		7879DA142A71ED26006D3093 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7879DA152A71ED7F006D3093 /* Signin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +438,7 @@
 				07C733E72A70E0AF004C2238 /* TabBarVC.swift in Sources */,
 				785AC33E2A70D68C00FB35AE /* TitleLabel.swift in Sources */,
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
+				7879DA162A71ED7F006D3093 /* Signin.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
 			);
