@@ -52,5 +52,10 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         cell.pointLabel.text = "1000point"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let postVC = PostVC()
+        navigationController?.pushViewController(postVC, animated: true)
+    }
 }
 
