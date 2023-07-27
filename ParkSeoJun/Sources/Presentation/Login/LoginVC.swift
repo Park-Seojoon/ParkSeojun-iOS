@@ -1,6 +1,7 @@
 import UIKit
 import Then
 import SnapKit
+import Moya
 
 final class LoginVC: BaseVC {
     
@@ -18,7 +19,7 @@ final class LoginVC: BaseVC {
     
     private lazy var loginButton = NextStepButton().then{
         $0.setTitle("로그인", for: .normal)
-
+        
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
@@ -33,14 +34,18 @@ final class LoginVC: BaseVC {
         $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func setup() {
         self.navigationController?.navigationBar.tintColor = UIColor(rgb: 0x000000)
         self.navigationController?.navigationBar.topItem?.title = ""
         
         idTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        LoginViewModel().loginCompleted(email: "s22023@gsm.hs.kr", password: "qkrwnstj7!")
         
     }
     
@@ -82,9 +87,9 @@ final class LoginVC: BaseVC {
             $0.top.equalTo(loginButton.snp.bottom).offset(14)
             $0.leading.equalTo(firstTimeIdeaArchiveLabel.snp.trailing).offset(4)
         }
-
+        
     }
-
+    
     @objc func signupButtonTapped(_ sender: UIButton){
         let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -94,19 +99,19 @@ final class LoginVC: BaseVC {
         UIApplication.shared.windows.first?.rootViewController = TabBarVC()
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
-
+    
 }
 
 extension LoginVC {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if idTextField.text!.count > 0 && passwordTextField.text!.count > 0{
-//            loginButton.backgroundColor = UIColor(rgb: 0x42CC89)
-//            loginButton.isEnabled = true
+            //            loginButton.backgroundColor = UIColor(rgb: 0x42CC89)
+            //            loginButton.isEnabled = true
         }
         else{
-//            loginButton.backgroundColor = UIColor(rgb: 0x999999)
-//            loginButton.isEnabled = false
+            //            loginButton.backgroundColor = UIColor(rgb: 0x999999)
+            //            loginButton.isEnabled = false
         }
     }
 }

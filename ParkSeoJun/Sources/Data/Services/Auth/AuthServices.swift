@@ -5,8 +5,8 @@ enum AuthServices {
     case login(param: LoginRequest)
     case signup(param: SignupRequest)
 }
-
 extension AuthServices: TargetType {
+    
     public var baseURL: URL {
         return URL(string: BaseURL.baseURL)!
     }
@@ -14,9 +14,9 @@ extension AuthServices: TargetType {
     var path: String {
         switch self {
         case .login:
-            return "/auth/login/"
+            return "/auth/login"
         case .signup:
-            return "/auth/signup/"
+            return "/auth/signup"
         }
     }
     
@@ -34,19 +34,19 @@ extension AuthServices: TargetType {
     var task: Task {
         switch self {
         case .login(let param):
-            return .requestJSONEncodable(param)
+            let params : [String: String] = [
+                "email" : param.email,
+                "password" : param.password ]
+            return .requestJSONEncodable(params)
         case .signup(let param):
             return .requestJSONEncodable(param)
         }
     }
-
     
     var headers: [String : String]? {
         switch self {
-//        case .refreshToken(let refreshToken):
-//            return["Content-Type" :"application/json", "refreshToken" : refreshToken]
         default:
-            return["Content-Type" :"application/json"]
+            return ["Content-Type": "application/json"]
         }
     }
 }

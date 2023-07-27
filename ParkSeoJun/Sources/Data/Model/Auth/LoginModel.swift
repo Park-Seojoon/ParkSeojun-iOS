@@ -1,12 +1,10 @@
 import Foundation
 
 struct LoginModel: Codable {
-    let data: LoginResponse
+    let email: String
+    let password: String
 }
 
 struct LoginResponse: Codable {
     let accessToken: String
-    let refreshToken: String
-    let accessExpiredAt: String
-    let refreshExpiredAT: String
 }

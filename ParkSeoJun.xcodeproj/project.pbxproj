@@ -168,8 +168,8 @@
 		07C7340C2A7206BF004C2238 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				07C734112A72082C004C2238 /* SignupRequest.swift */,
 				07C7340F2A7207B6004C2238 /* LoginRequest.swift */,
+				07C734112A72082C004C2238 /* SignupRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
