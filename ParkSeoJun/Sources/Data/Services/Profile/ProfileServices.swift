@@ -2,9 +2,9 @@ import Foundation
 import Moya
 
 enum ProfileServices {
-    case myProfile(param: MyProfileRequest )
+    case myProfile(param: MyProfileRequest)
     case myList(param: MyListRequest)
-    case myAppliedList(param: MyListRequest)
+    case myAppliedList(param: MyAppliedListRequest)
 }
 
 extension ProfileServices: TargetType {
@@ -22,8 +22,6 @@ extension ProfileServices: TargetType {
         case .myAppliedList:
             return "/user/article/doMyList"
         }
-
-      
     }
     
     var method: Moya.Method {
@@ -31,6 +29,8 @@ extension ProfileServices: TargetType {
         case .myProfile:
             return .get
         case .myList:
+            return .get
+        case .myAppliedList:
             return .get
         }
     }
@@ -51,6 +51,8 @@ extension ProfileServices: TargetType {
         case .myProfile(let param):
             return ["Authorization": param.header]
         case .myList(let param):
+            return ["Authorization": param.header]
+        case .myAppliedList(let param):
             return ["Authorization": param.header]
         default:
             return ["Content-Type": "application/json"]

@@ -1,8 +1,9 @@
-//
-//  MyAppliedListRequest.swift
-//  ParkSeoJun
-//
-//  Created by 박준서 on 2023/07/28.
-//
-
 import Foundation
+
+struct MyAppliedListRequest: Codable {
+    let header: String
+    
+    init(header: String) {
+        self.header = header
+    }
+}

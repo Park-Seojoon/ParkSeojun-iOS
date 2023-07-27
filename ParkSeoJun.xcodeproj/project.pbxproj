@@ -41,6 +41,8 @@
 		78801BBC2A72E2DB00657281 /* MyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BBB2A72E2DB00657281 /* MyProfileModel.swift */; };
 		78801BC02A72E46900657281 /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BBF2A72E46900657281 /* MyProfileViewModel.swift */; };
 		78801BC22A72ED5B00657281 /* MyAppliedListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BC12A72ED5B00657281 /* MyAppliedListRequest.swift */; };
+		78801BC42A72EEA200657281 /* MyAppliedListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BC32A72EEA200657281 /* MyAppliedListModel.swift */; };
+		78801BC82A72EF2200657281 /* AppliedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78801BC72A72EF2200657281 /* AppliedListViewModel.swift */; };
 		78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78815EDD2A7279C400947F45 /* SignupViewModel.swift */; };
 		78815EED2A727C1E00947F45 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEC2A727C1E00947F45 /* Moya */; };
 		78815EF02A727C3100947F45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78815EEF2A727C3100947F45 /* SnapKit */; };
@@ -92,6 +94,8 @@
 		78801BBB2A72E2DB00657281 /* MyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileModel.swift; sourceTree = "<group>"; };
 		78801BBF2A72E46900657281 /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
 		78801BC12A72ED5B00657281 /* MyAppliedListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppliedListRequest.swift; sourceTree = "<group>"; };
+		78801BC32A72EEA200657281 /* MyAppliedListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppliedListModel.swift; sourceTree = "<group>"; };
+		78801BC72A72EF2200657281 /* AppliedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedListViewModel.swift; sourceTree = "<group>"; };
 		78815EDD2A7279C400947F45 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		78815EF82A728B2200947F45 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		789DF4822A72B14F003452B6 /* MyListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRequest.swift; sourceTree = "<group>"; };
@@ -428,7 +432,8 @@
 		7879DA0E2A71E757006D3093 /* AppliedStatusVC */ = {
 			isa = PBXGroup;
 			children = (
-				7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */,
+				78801BC52A72EF0900657281 /* VC */,
+				78801BC62A72EF0F00657281 /* Model */,
 			);
 			path = AppliedStatusVC;
 			sourceTree = "<group>";
@@ -463,6 +468,22 @@
 			isa = PBXGroup;
 			children = (
 				78801BBF2A72E46900657281 /* MyProfileViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78801BC52A72EF0900657281 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		78801BC62A72EF0F00657281 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78801BC72A72EF2200657281 /* AppliedListViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +535,7 @@
 			children = (
 				78801BBB2A72E2DB00657281 /* MyProfileModel.swift */,
 				789DF4852A72B217003452B6 /* MyListModel.swift */,
+				78801BC32A72EEA200657281 /* MyAppliedListModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -629,6 +651,7 @@
 				785AC33B2A70D66200FB35AE /* SecureTextField.swift in Sources */,
 				786C99CF2A70BD8D00E91091 /* LoginVC.swift in Sources */,
 				78801BBC2A72E2DB00657281 /* MyProfileModel.swift in Sources */,
+				78801BC82A72EF2200657281 /* AppliedListViewModel.swift in Sources */,
 				07C734122A72082C004C2238 /* SignupRequest.swift in Sources */,
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
 				786C99CD2A70BD8D00E91091 /* SceneDelegate.swift in Sources */,
@@ -639,6 +662,7 @@
 				7879DA092A71E720006D3093 /* HistoryVC.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
 				78815EDE2A7279C400947F45 /* SignupViewModel.swift in Sources */,
+				78801BC42A72EEA200657281 /* MyAppliedListModel.swift in Sources */,
 				07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */,
 				7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */,
 				78815EF92A728B2200947F45 /* KeyChainManager.swift in Sources */,
