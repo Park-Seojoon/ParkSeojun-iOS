@@ -2,9 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class LoginVC: BaseVC, LoginViewModelDelegate {
-    
-    private let viewModel = LoginViewModel()
+final class LoginVC: BaseVC {
     
     private let loginLabel = TitleLabel().then{
         $0.text = "LOGIN"
@@ -20,7 +18,7 @@ final class LoginVC: BaseVC, LoginViewModelDelegate {
     
     private lazy var loginButton = NextStepButton().then{
         $0.setTitle("로그인", for: .normal)
-        //$0.isEnabled = false
+
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
@@ -86,23 +84,17 @@ final class LoginVC: BaseVC, LoginViewModelDelegate {
         }
 
     }
-    
-    func login() {
-        let email = idTextField.text
-        let password = passwordTextField.text
-        viewModel.loginCompleted(email: email ?? "", password: password ?? "")
-    }
-    
-    @objc func loginButtonTapped(_ sender: UIButton){
-        login()
-        let vc = TabBarVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
 
     @objc func signupButtonTapped(_ sender: UIButton){
         let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @objc func loginButtonTapped(_ sender: UIButton){
+        UIApplication.shared.windows.first?.rootViewController = TabBarVC()
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
+    }
+
 }
 
 extension LoginVC {
@@ -118,4 +110,5 @@ extension LoginVC {
         }
     }
 }
+
 
