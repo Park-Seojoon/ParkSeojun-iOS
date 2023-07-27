@@ -19,13 +19,6 @@
 		07C734122A72082C004C2238 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734112A72082C004C2238 /* SignupRequest.swift */; };
 		07C734162A720AFB004C2238 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734152A720AFB004C2238 /* AuthServices.swift */; };
 		07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734182A720F86004C2238 /* LoginViewModel.swift */; };
-		07D3639F2A7256DE002412F3 /* UserArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3639E2A7256DE002412F3 /* UserArticleRequest.swift */; };
-		7844DBC82A70BE9200E3EEC0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC72A70BE9200E3EEC0 /* IQKeyboardManagerSwift */; };
-		07D363A12A725F19002412F3 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A02A725F19002412F3 /* UserServices.swift */; };
-		07D363A42A728991002412F3 /* UserArticleListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A32A728990002412F3 /* UserArticleListRequest.swift */; };
-		07D363A72A728A53002412F3 /* UserArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D363A62A728A53002412F3 /* UserArticleListModel.swift */; };
-		7844DBC22A70BE4D00E3EEC0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC12A70BE4D00E3EEC0 /* Then */; };
-		7844DBC52A70BE8900E3EEC0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7844DBC42A70BE8900E3EEC0 /* SnapKit */; };
 		7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */; };
 		7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */; };
 		785AC3362A70D4E100FB35AE /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AC3352A70D4E100FB35AE /* SignupVC.swift */; };
@@ -67,10 +60,6 @@
 		07C734112A72082C004C2238 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
 		07C734152A720AFB004C2238 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		07C734182A720F86004C2238 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		07D3639E2A7256DE002412F3 /* UserArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserArticleRequest.swift; sourceTree = "<group>"; };
-		07D363A02A725F19002412F3 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
-		07D363A32A728990002412F3 /* UserArticleListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserArticleListRequest.swift; sourceTree = "<group>"; };
-		07D363A62A728A53002412F3 /* UserArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserArticleListModel.swift; sourceTree = "<group>"; };
 		7844DBD02A70BFD500E3EEC0 /* UIColor + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
 		7844DBD32A70BFF300E3EEC0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		785AC3352A70D4E100FB35AE /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -177,7 +166,6 @@
 		07C7340B2A7204A9004C2238 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				07D3639D2A72569A002412F3 /* User */,
 				07C7340C2A7206BF004C2238 /* Auth */,
 				789DF4812A72B142003452B6 /* Profile */,
 			);
@@ -196,7 +184,6 @@
 		07C734132A720ADF004C2238 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				07D3639C2A725692002412F3 /* User */,
 				07C734142A720AE7004C2238 /* Auth */,
 			);
 			path = Services;
@@ -216,31 +203,6 @@
 				07C734182A720F86004C2238 /* LoginViewModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		07D3639B2A72568A002412F3 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				07D363A62A728A53002412F3 /* UserArticleListModel.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		07D3639C2A725692002412F3 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				07D363A02A725F19002412F3 /* UserServices.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		07D3639D2A72569A002412F3 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				07D3639E2A7256DE002412F3 /* UserArticleRequest.swift */,
-				07D363A32A728990002412F3 /* UserArticleListRequest.swift */,
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 		7844DBC92A70BF3900E3EEC0 /* Support */ = {
@@ -463,6 +425,7 @@
 		7879DA142A71ED26006D3093 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78815EF72A728B1700947F45 /* KeyChain */,
 				07C734042A7201D4004C2238 /* Auth */,
 				789DF4842A72B181003452B6 /* Profile */,
 			);
@@ -599,7 +562,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				785AC33B2A70D66200FB35AE /* SecureTextField.swift in Sources */,
-				07D363A72A728A53002412F3 /* UserArticleListModel.swift in Sources */,
 				786C99CF2A70BD8D00E91091 /* LoginVC.swift in Sources */,
 				07C734122A72082C004C2238 /* SignupRequest.swift in Sources */,
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
@@ -615,9 +577,7 @@
 				7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */,
 				78815EF92A728B2200947F45 /* KeyChainManager.swift in Sources */,
 				07C734162A720AFB004C2238 /* AuthServices.swift in Sources */,
-				07D3639F2A7256DE002412F3 /* UserArticleRequest.swift in Sources */,
 				7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */,
-				07D363A12A725F19002412F3 /* UserServices.swift in Sources */,
 				07C734192A720F86004C2238 /* LoginViewModel.swift in Sources */,
 				07C733EF2A70EFFE004C2238 /* UITextField + Extension.swift in Sources */,
 				07C734032A720163004C2238 /* BaseURL.swift in Sources */,
@@ -630,7 +590,6 @@
 				785AC33E2A70D68C00FB35AE /* TitleLabel.swift in Sources */,
 				07C734082A72024E004C2238 /* LoginModel.swift in Sources */,
 				785AC3382A70D60300FB35AE /* NormalTextField.swift in Sources */,
-				07D363A42A728991002412F3 /* UserArticleListRequest.swift in Sources */,
 				07C7340A2A72026B004C2238 /* SignupModel.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
