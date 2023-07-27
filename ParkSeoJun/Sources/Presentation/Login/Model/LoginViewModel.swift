@@ -1,10 +1,3 @@
-//
-//  LoginViewModel.swift
-//  ParkSeoJun
-//
-//  Created by 신아인 on 2023/07/27.
-//
-
 import Foundation
 import Moya
 
@@ -19,17 +12,22 @@ protocol LoginViewModelDelegate: AnyObject {
 
 extension LoginViewModel {
     func loginCompleted(email: String, password: String) {
-        let param = LoginRequest(email: email, password: password)
+        
+        let param = LoginRequest.init(email: email, password: password)
+        
         authProvider.request(.login(param: param)) { response in
+            
             switch response {
             case .success(let result):
-                print(String(data: result.data, encoding: .utf8))
                 do {
-                    self.authData = try result.map(LoginResponse.self)
+                    self.authData = try? result.map(LoginResponse.self)
                 }catch(let err) {
                     print(String(describing: err))
                 }
                 let statusCode = result.statusCode
+                
+                print(self.authData.accessToken)
+                
                 switch statusCode{
                 case 200..<300:
                     print("Login success with status code: \(statusCode)")
