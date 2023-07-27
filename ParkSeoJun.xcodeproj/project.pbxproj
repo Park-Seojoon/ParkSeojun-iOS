@@ -13,10 +13,8 @@
 		07C733F82A713D39004C2238 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733F72A713D39004C2238 /* HomeVC.swift */; };
 		07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C733FE2A71EC35004C2238 /* PostVC.swift */; };
 		07C734032A720163004C2238 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734022A720163004C2238 /* BaseURL.swift */; };
-		07C734062A72021F004C2238 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734052A72021F004C2238 /* RefreshTokenModel.swift */; };
 		07C734082A72024E004C2238 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734072A72024E004C2238 /* LoginModel.swift */; };
 		07C7340A2A72026B004C2238 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734092A72026B004C2238 /* SignupModel.swift */; };
-		07C7340E2A7206E2004C2238 /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7340D2A7206E2004C2238 /* RefreshTokenRequest.swift */; };
 		07C734102A7207B6004C2238 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7340F2A7207B6004C2238 /* LoginRequest.swift */; };
 		07C734122A72082C004C2238 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734112A72082C004C2238 /* SignupRequest.swift */; };
 		07C734162A720AFB004C2238 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C734152A720AFB004C2238 /* AuthServices.swift */; };
@@ -44,8 +42,6 @@
 		7879DA132A71E7F1006D3093 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */; };
 		7879DA192A71F464006D3093 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7879DA182A71F464006D3093 /* Moya */; };
 		78D6B9592A70DA1D008E1E63 /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */; };
-		78D6B95D2A70E92F008E1E63 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B95C2A70E92F008E1E63 /* MyProfileVC.swift */; };
-		78D6B95F2A710917008E1E63 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6B95E2A710917008E1E63 /* HistoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +51,8 @@
 		07C733F72A713D39004C2238 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		07C733FE2A71EC35004C2238 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		07C734022A720163004C2238 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
-		07C734052A72021F004C2238 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		07C734072A72024E004C2238 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		07C734092A72026B004C2238 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
-		07C7340D2A7206E2004C2238 /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
 		07C7340F2A7207B6004C2238 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		07C734112A72082C004C2238 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
 		07C734152A720AFB004C2238 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
@@ -84,8 +78,6 @@
 		7879DA0F2A71E769006D3093 /* AppliedStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedStatusVC.swift; sourceTree = "<group>"; };
 		7879DA122A71E7F1006D3093 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		78D6B9582A70DA1D008E1E63 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
-		78D6B95C2A70E92F008E1E63 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
-		78D6B95E2A710917008E1E63 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +151,6 @@
 		07C734042A7201D4004C2238 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				07C734052A72021F004C2238 /* RefreshTokenModel.swift */,
 				07C734072A72024E004C2238 /* LoginModel.swift */,
 				07C734092A72026B004C2238 /* SignupModel.swift */,
 			);
@@ -177,9 +168,8 @@
 		07C7340C2A7206BF004C2238 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				07C7340D2A7206E2004C2238 /* RefreshTokenRequest.swift */,
-				07C7340F2A7207B6004C2238 /* LoginRequest.swift */,
 				07C734112A72082C004C2238 /* SignupRequest.swift */,
+				07C7340F2A7207B6004C2238 /* LoginRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -520,12 +510,10 @@
 				786C99CB2A70BD8D00E91091 /* AppDelegate.swift in Sources */,
 				786C99CD2A70BD8D00E91091 /* SceneDelegate.swift in Sources */,
 				785AC3432A70D74600FB35AE /* SmallTitleLabel.swift in Sources */,
-				07C734062A72021F004C2238 /* RefreshTokenModel.swift in Sources */,
 				07C733F82A713D39004C2238 /* HomeVC.swift in Sources */,
 				7879DA072A71E706006D3093 /* MyProfileVC.swift in Sources */,
 				07C733EC2A70E756004C2238 /* WriteVC.swift in Sources */,
 				7879DA092A71E720006D3093 /* HistoryVC.swift in Sources */,
-				07C7340E2A7206E2004C2238 /* RefreshTokenRequest.swift in Sources */,
 				7844DBD12A70BFD500E3EEC0 /* UIColor + Hex.swift in Sources */,
 				07C733FF2A71EC35004C2238 /* PostVC.swift in Sources */,
 				7879DA102A71E769006D3093 /* AppliedStatusVC.swift in Sources */,
@@ -545,7 +533,6 @@
 				07C7340A2A72026B004C2238 /* SignupModel.swift in Sources */,
 				785AC3412A70D6BA00FB35AE /* NextStepButton.swift in Sources */,
 				7844DBD42A70BFF300E3EEC0 /* BaseVC.swift in Sources */,
-				07C733FB2A713D66004C2238 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
