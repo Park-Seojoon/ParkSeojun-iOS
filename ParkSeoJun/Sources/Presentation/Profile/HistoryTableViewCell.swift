@@ -14,7 +14,7 @@ class HistoryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let userProfile = UIImageView().then {
+    let userProfile = UIImageView().then {
         $0.layer.cornerRadius = 5
         $0.image = UIImage(named: "profileImage")
         $0.layer.cornerRadius = 5
@@ -22,30 +22,26 @@ class HistoryTableViewCell: UITableViewCell {
     }
     
     var titleLabel = UILabel().then {
-        $0.text = "TitleTitleTitle"
         $0.font = UIFont.systemFont(ofSize: 17)
         $0.textColor = UIColor(rgb: 0x000000)
     }
     
     var pointLabel = UILabel().then {
-        $0.text = "1,000 point"
         $0.font = UIFont.systemFont(ofSize: 12)
         $0.textColor = UIColor(rgb: 0xC0BCBC)
     }
     
-    private lazy var acceptButton = UIButton().then {
+    lazy var acceptButton = UIButton().then {
         $0.layer.cornerRadius = 8
         $0.setTitle("수락", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0xFFFFFF), for: .normal)
         $0.titleLabel?.font = .boldSystemFont(ofSize: 13)
         $0.backgroundColor = UIColor(rgb: 0x5074F3)
-        
     }
     
     private func addView() {
         [userProfile, titleLabel, pointLabel, acceptButton].forEach{
             contentView.addSubview($0)
-        
         }
     }
     
@@ -68,8 +64,9 @@ class HistoryTableViewCell: UITableViewCell {
             $0.width.equalTo(60)
             $0.top.equalToSuperview().offset(28)
             $0.trailing.equalToSuperview().inset(28)
-            
         }
     }
+    
+    
 }
 

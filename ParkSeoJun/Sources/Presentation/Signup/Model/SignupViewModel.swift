@@ -20,7 +20,7 @@ extension SignupViewModel {
             case .success(let result):
                 do {
                     
-                }catch(let err) {
+                } catch(let err) {
                     print(String(describing: err))
                 }
                 
@@ -28,8 +28,6 @@ extension SignupViewModel {
                 
                 switch statusCode{
                 case 200..<300:
-                    //                    self.navigationController?.pushViewController(vc, animated: true)
-                    //                    self.popToRootViewController(animated: true)
                     self.onSignupSuccess
                     print("succes")
                 case 400:

@@ -1,6 +1,6 @@
 import Foundation
 
-struct MyListRequest: Codable {
+struct MyAppliedListRequest: Codable {
     let header: String
     
     init(header: String) {
