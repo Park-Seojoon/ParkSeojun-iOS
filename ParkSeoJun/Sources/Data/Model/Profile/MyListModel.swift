@@ -12,7 +12,7 @@ struct BoardList: Codable {
     let id: CLong
     let title: String
     let point: Int
-    let completed: Bool
+    let myListIngType: String
     let url: String
 }
 

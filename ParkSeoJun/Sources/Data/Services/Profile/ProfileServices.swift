@@ -5,6 +5,7 @@ enum ProfileServices {
     case myProfile(param: MyProfileRequest)
     case myList(param: MyListRequest)
     case myAppliedList(param: MyAppliedListRequest)
+    case completed(param: CompletedRequest)
 }
 
 extension ProfileServices: TargetType {
@@ -21,6 +22,8 @@ extension ProfileServices: TargetType {
             return "/user/article/myList"
         case .myAppliedList:
             return "/user/article/doMyList"
+        case .completed(param: let param):
+            return "/user/article/\(param.id)/check"
         }
     }
     
@@ -32,6 +35,8 @@ extension ProfileServices: TargetType {
             return .get
         case .myAppliedList:
             return .get
+        case .completed:
+            return .post
         }
     }
     
@@ -53,6 +58,8 @@ extension ProfileServices: TargetType {
         case .myList(let param):
             return ["Authorization": param.header]
         case .myAppliedList(let param):
+            return ["Authorization": param.header]
+        case .completed(let param):
             return ["Authorization": param.header]
         default:
             return ["Content-Type": "application/json"]

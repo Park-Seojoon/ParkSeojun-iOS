@@ -27,6 +27,7 @@ extension MyListViewModel {
                 switch statusCode {
                 case 200..<300:
                     if let myListResponse = try? result.map(MyListResponse.self) {
+                        print(myListResponse)
                         completion(myListResponse)
                     } else {
                         print("Failed to parse MyListResponse")

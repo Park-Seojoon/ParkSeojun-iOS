@@ -12,6 +12,6 @@ struct BoardList2: Codable {
     let id: CLong
     let title: String
     let point: Int
-    let completed: Bool
     let url: String
+    let ingType: String
 }

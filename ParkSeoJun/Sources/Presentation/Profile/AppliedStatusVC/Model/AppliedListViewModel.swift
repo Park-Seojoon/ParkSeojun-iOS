@@ -9,9 +9,10 @@ class AppliedListViewModel {
 
 extension AppliedListViewModel {
     
-    func getMyAppliedList(accessToken: String, completion: @escaping (MyListResponse?) -> Void) {
+    func getMyAppliedList(accessToken: String, completion: @escaping (MyAppliedListResponse?) -> Void) {
         
         let param = MyAppliedListRequest.init(header: accessToken)
+        
         
         myAppliedListProfileProvider.request(.myAppliedList(param: param)) { response in
             switch response {
@@ -27,11 +28,9 @@ extension AppliedListViewModel {
                 
                 switch statusCode {
                 case 200..<300:
-                
                     if let myAppliedListResponse = try? result.map(MyAppliedListResponse.self) {
-                        completion(myAppliedListResponse) // 변경된 부분
-                    }
-                    else {
+                        completion(myAppliedListResponse)
+                    } else {
                         print("Failed to parse MyAppliedListResponse")
                         completion(nil)
                     }
@@ -44,6 +43,6 @@ extension AppliedListViewModel {
                 print(String(describing: err))
             }
         }
+        
     }
 }
-

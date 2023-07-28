@@ -90,7 +90,6 @@ final class MyProfileVC: BaseVC {
                     
                     self.nicknameLabel.text = myProfileResponse!.name
                     self.myPointLabel.text = String(myProfileResponse!.point)
-                    
                 })
             }
         } catch let error {
